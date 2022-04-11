@@ -9,4 +9,8 @@ for(let i=0;i<11;i++){
     randoms[i] = random;
     console.log(randoms[i]);
 }
-
+//generating second max
+var max = Math.max.apply(null, randoms); // get the max of the array
+randoms.splice(randoms.indexOf(max), 1); // remove max from the array
+var secondmax= Math.max.apply(null, randoms); //getting the second max
+console.log("second max is "+secondmax);
