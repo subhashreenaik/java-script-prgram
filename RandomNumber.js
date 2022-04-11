@@ -21,3 +21,11 @@ randoms.splice(randoms.indexOf(min), 1); // remove min from the array
 var secondmin= Math.min.apply(null, randoms); //getting the second min
 console.log("second min is "+secondmin);
 
+//finding second largest number in a array using sorting method
+var secondlargest = randoms.sort(function(a, b) { return b - a; })[1];
+console.log(secondlargest);
+
+
+//finding second minimum number in a array using sorting method
+var secondminimum = randoms.sort(function(a, b) { return a - b; })[1];
+console.log(secondminimum);
