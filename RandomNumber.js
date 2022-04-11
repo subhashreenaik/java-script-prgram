@@ -14,3 +14,10 @@ var max = Math.max.apply(null, randoms); // get the max of the array
 randoms.splice(randoms.indexOf(max), 1); // remove max from the array
 var secondmax= Math.max.apply(null, randoms); //getting the second max
 console.log("second max is "+secondmax);
+
+//finding second minimum number in a array without sorting method
+var min = Math.min.apply(null, randoms); // get the min of the array
+randoms.splice(randoms.indexOf(min), 1); // remove min from the array
+var secondmin= Math.min.apply(null, randoms); //getting the second min
+console.log("second min is "+secondmin);
+
